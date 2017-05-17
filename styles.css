@@ -1,0 +1,9 @@
+.wrapper{
+	background: #312efc;
+}
+
+
+/*overwrite the tile bg color*/
+.tile{
+	background-color:white;
+}
