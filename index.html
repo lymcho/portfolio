@@ -1,5 +1,3 @@
-<!-- built with bulma.io -->
-<!-- http://bulma.io/documentation/overview/customize/-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,62 +6,107 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.css">
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+<!-- anchor to the top -->
+<a id="home">&nbsp;</a>
+<!-- name & title -->
 <section class="hero">
   <div class="hero-body">
-    <div class="container">
-      <h1 class="title has-text-centered">
-        Ling Zhou
-      </h1>
-      <h2 class="subtitle has-text-centered">
-        Product Designer
-      </h2>
+    <div class="container has-text-centered">
+   <img src="images/logo.png" width="200px"><br>
+ <!--    <p class="subtitle">Product Designer</p> -->
+    <p class="heading has-text-centered"><a data-scroll href="#home">&nbsp;work&nbsp;</a>&nbsp;/&nbsp;<a data-scroll href="#about">&nbsp;about&nbsp;</a>&nbsp;/&nbsp;<a data-scroll href="#contact">&nbsp;contact&nbsp;</a>
     </div>
   </div>
+
 </section>
+
 <!-- top 3 portoflio pieces -->
+<section>
 <div class="container">
 <div class="tile is-ancestor">
   <div class="tile is-vertical is-8">
+
     <div class="tile">
      <div class="tile is-parent">
+      
         <article class="tile is-child notification">
-          <p class="title">Online Marketplace Browsing Experience</p>
-          <p class="subtitle">Adverator.com<a href="project_wip.html">view project</a></p>
+          <p class="specialtitle2"><strong>Adverator.com</strong></p>
+          <p class="subtitle">first&only e-commerce platform for local ads</p> 
+          <div class="tags "><span class="tag is-warning">UI/UX</span>&nbsp;<span class="tag is-warning">Art Direction</span>&nbsp;</div>
+          <br>
+         
           <figure class="image is-4by3">
             <img src="images/ad_website.gif">
           </figure>
+          <a class="button is-outlined" id="adverator">View Project</a>
+
         </article>
+        
       </div>
       <div class="tile is-parent">
         <article class="tile is-child notification">
-          <p class="title">Order Fullfillment Experience</p>
-          <p class="subtitle">Adverator.com</p>
+          <p class="specialtitle2"><strong>Madison Square Garden</strong></p>
+          <p class="subtitle">msgbeforetheshow.com - a new way to experience msg</p>
+          <div class="tags "><span class="tag is-warning">UI/UX</span>&nbsp;<span class="tag is-warning">Art Direction</span>&nbsp;</div>
           <figure class="image is-4by3">
             <img src="images/ad_pickup.gif">
           </figure>
+          <a class="button is-outlined" id="adverator">View Project</a>
         </article>
       </div>
     </div>
   </div>
   <div class="tile is-parent">
     <article class="tile is-child notification">
-      <div class="content">
-        <p class="title">Kid's Phone </p>
-        <p class="subtitle">Product visualization</p>
+        <p class="specialtitle2"><strong>Sotheby's</strong></p>
+        <p class="subtitle">Reform the Digital Auction Catalog</p>
+        <div class="tags "><span class="tag is-warning">UX</span>&nbsp;<span class="tag is-warning">Visual Strategy</span>&nbsp;</div>
         <figure class="image is-4by3">
             <img src="images/kidfone.gif">
           </figure>
-        <div class="content">
-          <!-- Content -->
-        </div>
-      </div>
+        <br>
+          <a class="button is-outlined" id="adverator">View Project</a>
     </article>
   </div>
 </div>
+
+
+<!-- adverator modal -->
+
+<div class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-content">
+    <!-- Any other Bulma elements you want -->
+     <section class="section">
+    <div class="container is-fluid">
+      <div class="title">
+        <p class="title"><strong>Adverator.com</strong></p>
+        <h2 class="subtitle">first & only e-commerce platform for local ads</h2>
+        <h2 class="subtitle">
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde necessitatibus quo amet in magnam omnis laborum saepe aspernatur earum magni aperiam quos facere, neque consequatur enim fugiat ducimus provident iure!
+        </h2>
+      </div>
+      <div class="tags"><span class="tag is-warning">UI/UX</span>&nbsp;<span class="tag is-warning">Art Direction</span>&nbsp;</div><br>
+      <figure class="image is-4by3">
+            <img src="images/ad_website.gif">
+          </figure>
+      <br>
+          <a class="button is-outlined" id="adverator">View Project</a>
+    </div>
+
+  </section>
+  
+  </div>
+  <button class="modal-close"></button>
+</div>
+
+
+
+
+
 <!-- second tier 3 portoflio pieces -->
 <div class="container">
 <div class="tile is-ancestor">
@@ -71,8 +114,9 @@
     <div class="tile">
      <div class="tile is-parent">
         <article class="tile is-child notification">
-          <p class="title">Strategic Pitch Deck</p>
-          <p class="subtitle">Vaudeville Ventures</p>
+          <p class="specialtitle2"><strong>Margaritaville</strong></p>
+          <p class="subtitle">Content Strategy Pitch Deck</p>
+          <div class="tags "><span class="tag is-warning">Branding</span>&nbsp;<span class="tag is-warning">Art Direction</span>&nbsp;</div>
           <figure class="image is-4by3">
             <img src="images/vv.gif">
           </figure>
@@ -80,8 +124,49 @@
       </div>
       <div class="tile is-parent">
         <article class="tile is-child notification">
-          <p class="title">Marketing Landing Page</p>
-          <p class="subtitle">Casually</p>
+          <p class="specialtitle2"><strong>Comcast</strong></p>
+          <p class="subtitle">Improving the Customer Experience of Xfinity</p>
+          <div class="tags "><span class="tag is-warning">UX</span>&nbsp;<span class="tag is-warning">Graphic Design</span>&nbsp;</div>
+          <figure class="image is-4by3">
+            <img src="images/casually.gif">
+          </figure>
+        </article>
+      </div>
+    </div>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child notification"> 
+        <p class="specialtitle2"><strong>LeanOnWe</strong></p>
+        <p class="subtitle">Reimagine the online marketplace for homecare</p>
+        <div class="tags "><span class="tag is-warning">UI/UX</span>&nbsp;<span class="tag is-warning">Art Direction</span>&nbsp;</div>
+        <figure class="image is-4by3">
+            <img src="images/atm.gif">
+          </figure>
+      </div>
+    </article>
+  </div>
+</div>
+
+<!-- third tier 3 portoflio pieces -->
+<div class="container">
+<div class="tile is-ancestor">
+  <div class="tile is-vertical is-8">
+    <div class="tile">
+     <div class="tile is-parent">
+        <article class="tile is-child notification">
+          <p class="specialtitle2"><strong>The Intern Club</strong></p>
+          <p class="subtitle">Re-thinking the Onboarding Experience</p>
+          <div class="tags "><span class="tag is-warning">UI/UX</span>&nbsp;<span class="tag is-warning">Front-End Dev</span>&nbsp;</div>
+          <figure class="image is-4by3">
+            <img src="images/vv.gif">
+          </figure>
+        </article>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child notification">
+          <p class="specialtitle2"><strong>WaterColorCastle</strong></p>
+          <p class="subtitle">Building a Custom Portrait Shop from Scratch</p>
+          <div class="tags "><span class="tag is-warning">Art</span>&nbsp;<span class="tag is-warning">UI/UX</span>&nbsp;<span class="tag is-warning">Font-End Dev</span>&nbsp;</div>
           <figure class="image is-4by3">
             <img src="images/casually.gif">
           </figure>
@@ -91,76 +176,100 @@
   </div>
   <div class="tile is-parent">
     <article class="tile is-child notification">
-      <div class="content">
-        <p class="title">Tech Product Landing Page</p>
-        <p class="subtitle">American Towns Media</p>
+        <p class="specialtitle2"><strong>Design Team Portfolio</strong></p>
+        <p class="subtitle">A team portfolio design system</p>
+        <div class="tags "><span class="tag is-warning">UI/UX</span>&nbsp;<span class="tag is-warning">Front-End Dev</span>&nbsp;</div>
         <figure class="image is-4by3">
             <img src="images/atm.gif">
           </figure>
-        <div class="content">
-          <!-- Content -->
-        </div>
-      </div>
     </article>
   </div>
 </div>
+</section>
+
+<!-- about me -->
+<!-- anchor to about me -->
+<a id="about">&nbsp;</a>
+<br>
+<section class="section is-bold has-text-centered ">
+<div class="container">
+   <p class="hi">Hello!</p>
+   <p id="specialtitle"><strong>My name is Ling.</strong></p>
+<p id="specialtitle"><strong>I'm a product designer in NYC.</strong></p>
+<p id="specialtitle">I currently leading the design team at <a href="http://www.vaudevilleventures.com">Vaudeville Ventures</a>, and working on crafting stories & experiences through clean & but impactful visuals. I'm passionate about <a href="">design systems</a>, <a href="">media theory</a> and <a href="">experiental film.</a></p>
+</div>
+<br><br>
+
+
+
+
 <!-- some basic facts about me -->
-<section class="section">
+<p id="specialtitle"><strong>Elsewhere:</strong></p><br>
+<br><br>
 <nav class="level">
+
   <div class="level-item has-text-centered">
     <div>
-      <p class="heading">Contact</p>
-      <p class="title">Email Me</p>
+      <p class="heading">FINE ART SKETCHES</p>
+      <p class="title"><a href="http://www.instagram.com/watercolorcastle">Instagram</a></p>
     </div>
   </div>
   <div class="level-item has-text-centered">
     <div>
-      <p class="heading">Location</p>
-      <p class="title">New York, NY</p>
+      <p class="heading">FRONT-END PROJECTS</p>
+      <p class="title">Github</p>
     </div>
   </div>
   <div class="level-item has-text-centered">
     <div>
-      <p class="heading">Profile</p>
+      <p class="heading">DESIGN EXPERIMENTS</p>
       <p class="title">Dribbble</p>
     </div>
   </div>
   <div class="level-item has-text-centered">
     <div>
-      <p class="heading">About Me</p>
+      <p class="heading">DESIGN ARTICLES</p>
       <p class="title">Medium</p>
     </div>
   </div>
 </nav>
+</section>
 
+
+</body>
 <!-- footer -->
 
 <br><br>
 
- <footer class="footer">
-  <div class="container">
+<!--  <footer class="footer"> -->
+<!-- anchor to contact -->
+<a id="contact">&nbsp;</a>
+  <footer class="footer">
     <div class="content has-text-centered">
-      <p>
-        <strong>Portfolio</strong> by <a href="http://lingzhou.co">Ling Zhou</a>
-      </p>
+      <p><strong>Let's talk!</strong></p>
+      <p>lingzhoudesign@gmail.com</p>
       <p>
         <a class="icon" href="https://dribbble.com/ling_zhou">
-          <i class="fa fa-dribbble"></i>
-        </a>
+          <i class="fa fa-dribbble"></i></a>
         <a class="icon" href="https://instagram.com/watercolorcastle">
-          <i class="fa fa-instagram"></i>
-        </a>
-      </p>
+          <i class="fa fa-behance"></i></a>
+        <a class="icon" href="https://instagram.com/watercolorcastle">
+          <i class="fa fa-instagram"></i></a>
+        </p><br>
+        <a class="button is-warning" data-scroll href="#home">Back To Top</a>
     </div>
-  </div>
+  </footer>
+<!-- <footer> -->
+<footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/11.0.2/js/smooth-scroll.js"></script>
+<script src="https://cdnjs.com/libraries/bulma"></script>
+<script src="main.js"></script>
+<script src="modal.js"></script>
+
 </footer>
 
 
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-<script src="https://cdnjs.com/libraries/bulma"></script>
-<script src="main.js"></script>
-</body>
 <html>

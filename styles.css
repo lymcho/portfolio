@@ -1,9 +1,92 @@
-.wrapper{
-	background: #312efc;
-}
+
+
 
 
 /*overwrite the tile bg color*/
-.tile{
+.tile .is-child{
 	background-color:white;
+
 }
+
+
+/*special p style with bigger line-height*/
+#specialtitle{
+	font-size:2.6em;
+	color:#363636;
+	font-weight: 300;
+	line-height: 1.4em;
+
+}
+
+.specialtitle2{
+	font-size:2em;
+	color:#363636;
+	font-weight: 300;
+	line-height: 1em;
+	padding-bottom: 0.2em;
+
+}
+
+
+
+.modal{
+	padding:1em;
+	overflow-y:hidden;
+}
+
+
+.modal-content{
+	width: 80%;
+	padding:1em;
+	overflow-wrap: break-word;
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+
+.hi{
+	font-size:8em;
+	color:#FFDD57;
+	font-weight: 700;
+	line-height: 1.5em;
+
+}
+
+
+.tag {
+	color:red;
+	background: black;
+}
+
+
+
+
+
+/*
+/* unvisited link */
+a:link {
+    color: #363636; opacity: 1.0;
+    text-decoration: none;
+
+}
+
+/* visited link */
+a:visited {
+    color: #363636; opacity: 1.0;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color:#363636; opacity: 1.0;
+    background: #ededed;
+    transition: 1s;
+    cursor: pointer;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.25, 1);
+}
+
+/* selected link */
+a:active {
+    color: #363636; opacity: 0.9;
+    text-decoration: none;
+
+}*/
