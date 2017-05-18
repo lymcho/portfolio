@@ -1,13 +1,39 @@
 
 
-
-
 /*overwrite the tile bg color*/
+
+.tile .is-parent{
+	border: 1px solid #ededed!important;
+	padding: 32px;
+
+}
 .tile .is-child{
 	background-color:white;
 
+
 }
 
+.is-red{
+	background : #ff5500 !important;
+	color:white!important;
+}
+
+.is-warning{
+	bakcground:#FCC65C !important;
+
+}
+
+/*backtotop button*/
+.backtotop{
+	position:fixed;
+	bottom: 120px;
+    left: 0;
+    width: 42px;
+    font-size: 14px;
+    text-align: left;
+    line-height: 16px;
+    padding: 4px;
+}
 
 /*special p style with bigger line-height*/
 #specialtitle{
@@ -65,20 +91,19 @@
 /* unvisited link */
 a:link {
     color: #363636; opacity: 1.0;
-    text-decoration: none;
 
 }
 
 /* visited link */
 a:visited {
     color: #363636; opacity: 1.0;
-    text-decoration: none;
 }
 
 /* mouse over link */
 a:hover {
-    color:#363636; opacity: 1.0;
+    color:#ffffff; opacity: 1.0;
     background: #ededed;
+    background: #363636;
     transition: 1s;
     cursor: pointer;
     transition-timing-function: cubic-bezier(0.25, 1, 0.25, 1);
@@ -87,6 +112,5 @@ a:hover {
 /* selected link */
 a:active {
     color: #363636; opacity: 0.9;
-    text-decoration: none;
 
 }*/
