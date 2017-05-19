@@ -32,7 +32,7 @@
 
 /*side nav interaction*/
 .sidenav{
-	position:fixed;
+	position:fixed !important;
     left: 0;
     font-size: 12px;
     text-align: left;
@@ -44,17 +44,17 @@
 /*work button*/
 .about{
 
-	bottom: 40px;
+	bottom: 40px!important!important;
  
 }
 /*writings button*/
 .writings{
-	bottom: 80px;
+	bottom: 80px!important;
 }
 
 /*about button*/
 .work{
-	bottom: 120px;
+	bottom: 120px!important;
 }
 
 
