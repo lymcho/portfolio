@@ -1,10 +1,17 @@
 
-
 /*overwrite the tile bg color*/
 
 .tile .is-parent{
 	border: 1px solid #ededed!important;
 	padding: 32px;
+
+}
+
+
+
+.tile .is-child{
+	
+	padding: 8px !important;
 
 }
 .tile .is-child{
@@ -23,17 +30,37 @@
 
 }
 
-/*backtotop button*/
-.backtotop{
+/*side nav interaction*/
+.sidenav{
 	position:fixed;
-	bottom: 120px;
     left: 0;
-    width: 42px;
-    font-size: 14px;
+    font-size: 12px;
     text-align: left;
     line-height: 16px;
     padding: 4px;
 }
+
+
+/*work button*/
+.about{
+
+	bottom: 40px;
+ 
+}
+/*writings button*/
+.writings{
+	bottom: 80px;
+}
+
+/*about button*/
+.work{
+	bottom: 120px;
+}
+
+
+
+
+
 
 /*special p style with bigger line-height*/
 #specialtitle{

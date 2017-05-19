@@ -1,7 +1,6 @@
 function main(){
 //open up hidden  nav
-$('#nav-items').hide();
-$('#header').on('click', function(){
+$('#logo').on('hover', function(){
 	$('.nav-items').toggle();
 });
 
