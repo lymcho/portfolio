@@ -1,0 +1,96 @@
+//import grids from bulma
+
+@import "../bulma/sass/utilities/_all.sass"
+@import "../bulma/sass/grid/_all.sass"
+@import "../bulma/sass/elements/image.sass"
+@import "../bulma/sass/layout/footer.sass"
+//import own styles
+@import "partials/variables.sass"
+
+
+//logo fixed position to the left
+
+#nav
+	position: fixed
+	left: 4rem
+	top: 4rem
+	z-index: 5
+
+body
+	margin: 4rem
+
+
+
+
+#reveal
+	visibility: hidden
+
+
+		
+
+//type settings
+
+
+p
+	font-family: $font-family
+	margin: 0
+	&.title
+		font-size: $font-size-xxl
+		line-height: $font-lh-xxl
+		letter-spacing: $font-ls-m
+	&.subtitle
+		font-size: $font-size-xl
+		line-height: $font-lh-xl
+		margin-bottom: 1rem
+	&.label
+		font-size: $font-size-m
+		line-height: $font-lh-m
+		letter-spacing: $font-ls-m
+		margin-bottom: 1rem
+		color: $mediumgrey
+		text-transform: uppercase
+		text-align: center
+
+
+a
+	color: $textgrey
+	&:hover
+		color: $black
+		transition: $transition-time
+
+	&.cta
+		font-size: $font-size-m
+		line-height: $font-lh-m
+		font-weight: $font-weight-b
+		letter-spacing: $font-ls-l
+		text-decoration: none
+		text-transform: uppercase
+		&:hover
+			color: $red
+			transition: $transition-time
+
+// grid settings 
+.tile 
+	&.is-ancestor
+		border: $border-l !important
+		margin: 1rem 0
+		padding: 2rem 0 0 2rem
+	&:hover .cta
+		color: $red !important
+		transition: $transition-time
+.navitems
+	margin: 0.5rem 0rem
+
+
+.tags
+	span
+		font-size: $font-size-m !important
+		line-height: $font-lh-m !important
+		margin-top: 1rem
+		color: $textgrey
+	
+
+
+
+
+
