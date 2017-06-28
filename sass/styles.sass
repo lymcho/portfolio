@@ -12,12 +12,18 @@
 
 #nav
 	position: fixed
-	left: 4rem
-	top: 4rem
 	z-index: 5
+	left: 1rem
+	top: 1rem
+	@media (min-width: $desktop-breakpoint)
+		left: 4rem
+		top: 4rem
+		
 
 body
-	margin: 4rem
+	@media (min-width: $desktop-breakpoint)
+		margin: 4rem
+	
 
 
 
@@ -72,9 +78,12 @@ a
 // grid settings 
 .tile 
 	&.is-ancestor
-		border: $border-l !important
-		margin: 1rem 0
-		padding: 2rem 0 0 2rem
+		border-bottom: $border-l !important
+		padding: 2rem 1rem
+		@media (min-width: $desktop-breakpoint)
+			border: $border-l !important
+			margin: 1rem 0
+			padding: 2rem 0 0 2rem
 	&:hover .cta
 		color: $red !important
 		transition: $transition-time

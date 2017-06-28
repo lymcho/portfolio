@@ -626,12 +626,17 @@ html {
 
 #nav {
   position: fixed;
-  left: 4rem;
-  top: 4rem;
-  z-index: 5; }
+  z-index: 5;
+  left: 1rem;
+  top: 1rem; }
+  @media (min-width: 800px) {
+    #nav {
+      left: 4rem;
+      top: 4rem; } }
 
-body {
-  margin: 4rem; }
+@media (min-width: 800px) {
+  body {
+    margin: 4rem; } }
 
 #reveal {
   visibility: hidden; }
@@ -673,9 +678,13 @@ a {
       transition: 0.3s; }
 
 .tile.is-ancestor {
-  border: 1px solid #ededed !important;
-  margin: 1rem 0;
-  padding: 2rem 0 0 2rem; }
+  border-bottom: 1px solid #ededed !important;
+  padding: 2rem 1rem; }
+  @media (min-width: 800px) {
+    .tile.is-ancestor {
+      border: 1px solid #ededed !important;
+      margin: 1rem 0;
+      padding: 2rem 0 0 2rem; } }
 .tile:hover .cta {
   color: #ff5000 !important;
   transition: 0.3s; }
