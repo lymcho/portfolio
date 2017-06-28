@@ -652,6 +652,9 @@ p {
     font-size: 2.8rem;
     line-height: 3.36rem;
     margin-bottom: 1rem; }
+  p.body {
+    font-size: 1.4rem;
+    line-height: 1.68rem; }
   p.label {
     font-size: 1.4rem;
     line-height: 1.68rem;
@@ -665,7 +668,7 @@ a {
   color: #434343; }
   a:hover {
     color: #000;
-    transition: 0.3s; }
+    transition: 0.1s; }
   a.cta {
     font-size: 1.4rem;
     line-height: 1.68rem;
@@ -675,7 +678,7 @@ a {
     text-transform: uppercase; }
     a.cta:hover {
       color: #ff5000;
-      transition: 0.3s; }
+      transition: 0.1s; }
 
 .tile.is-ancestor {
   border-bottom: 1px solid #ededed !important;
@@ -687,7 +690,7 @@ a {
       padding: 2rem 0 0 2rem; } }
 .tile:hover .cta {
   color: #ff5000 !important;
-  transition: 0.3s; }
+  transition: 0.1s; }
 
 .navitems {
   margin: 0.5rem 0rem; }
@@ -697,9 +700,5 @@ a {
   line-height: 1.68rem !important;
   margin-top: 1rem;
   color: #434343; }
-
-i {
-  width: 2.4rem;
-  height: 2.4rem; }
 
 /*# sourceMappingURL=styles.css.map */
