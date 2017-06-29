@@ -3,7 +3,7 @@
 @import "../bulma/sass/utilities/_all.sass"
 @import "../bulma/sass/grid/_all.sass"
 @import "../bulma/sass/elements/image.sass"
-@import "../bulma/sass/layout/footer.sass"
+
 //import own styles
 @import "partials/variables.sass"
 
@@ -47,10 +47,15 @@ p
 	&.subtitle
 		font-size: $font-size-xl
 		line-height: $font-lh-xl
-		margin-bottom: 1rem
+		margin: 1rem 0
+	&.thirdtitle
+		font-size: $font-size-l
+		line-height: $font-lh-l
+		margin: 1rem 0
 	&.body
 		font-size: $font-size-m
 		line-height: $font-lh-m
+		margin-bottom: 1rem
 		
 	&.label
 		font-size: $font-size-m
@@ -64,6 +69,8 @@ p
 
 a
 	color: $textgrey
+	font-size: $font-size-m
+	cursor: pointer
 	&:hover
 		color: $black
 		transition: $transition-time
@@ -88,9 +95,11 @@ a
 			border: $border-l !important
 			margin: 1rem 0
 			padding: 2rem 0 0 2rem
+
 	&:hover .cta
 		color: $red !important
 		transition: $transition-time
+
 .navitems
 	margin: 0.5rem 0rem
 
