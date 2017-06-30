@@ -642,7 +642,7 @@ p {
   margin: 0; }
   p.title {
     font-size: 3.8rem;
-    line-height: 5.32rem;
+    line-height: 4.56rem;
     letter-spacing: 0rem; }
   p.subtitle {
     font-size: 2rem;
@@ -672,7 +672,6 @@ p {
 
 a {
   color: #434343;
-  font-size: 1.4rem;
   cursor: pointer; }
   a:hover {
     color: #000;
