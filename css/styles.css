@@ -645,9 +645,14 @@ p {
     line-height: 5.32rem;
     letter-spacing: 0rem; }
   p.subtitle {
-    font-size: 2.4rem;
-    line-height: 3.36rem;
-    margin: 1rem 0; }
+    font-size: 2rem;
+    line-height: 2.8rem; }
+    @media (min-width: 800px) {
+      p.subtitle {
+        margin: 4rem;
+        font-size: 2.4rem;
+        line-height: 3.36rem;
+        margin: 1rem 0; } }
   p.thirdtitle {
     font-size: 2rem;
     line-height: 2.8rem;
