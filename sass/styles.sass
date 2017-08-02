@@ -3,6 +3,7 @@
 @import "../bulma/sass/utilities/_all.sass"
 @import "../bulma/sass/grid/_all.sass"
 @import "../bulma/sass/elements/image.sass"
+@import "../bulma/sass/components/modal.sass"
 
 //import own styles
 @import "partials/variables.sass"
@@ -21,6 +22,12 @@
 		
 
 body
+	overflow: scroll
+	overflow-x: hidden
+	&::-webkit-scrollbar 
+		width: 0px  /* remove scrollbar space */
+		background: transparent  /* optional: just make scrollbar invisible */
+
 	@media (min-width: $desktop-breakpoint)
 		margin: 4rem
 	
@@ -69,6 +76,17 @@ p
 		color: $mediumgrey
 		text-transform: uppercase
 		text-align: center
+	&.smalllabel
+		display: inline
+		font-size: $font-size-base
+		line-height: $font-lh-s
+		letter-spacing: $font-ls-l
+		margin-bottom: 1rem
+		font-weight: $font-weight-b
+		color: $white
+		padding: 0.2rem
+		background: $mediumgrey
+		text-transform: uppercase
 
 
 a
@@ -113,5 +131,15 @@ a
 		line-height: $font-lh-m !important
 		margin-top: 1rem
 		color: $textgrey
-	
 
+.columns
+	padding: 1rem 2rem
+	@media (min-width: $desktop-breakpoint)
+		margin: 0 !important
+		padding: 1rem 0
+.column
+	padding: 0 1rem 0 0
+
+figure
+	&.image
+		margin: 0rem !important
