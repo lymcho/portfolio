@@ -777,6 +777,13 @@ body {
 #reveal {
   visibility: hidden; }
 
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 10rem;
+  line-height: 12rem;
+  letter-spacing: 0rem;
+  color: #434343; }
+
 p {
   font-family: "Raleway", sans-serif;
   margin: 0; }
