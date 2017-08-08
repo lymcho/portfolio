@@ -774,23 +774,22 @@ body {
     body {
       margin: 4rem; } }
 
-#reveal {
-  visibility: hidden; }
-
-h1 {
-  font-family: "Raleway", sans-serif;
-  font-size: 10rem;
-  line-height: 12rem;
-  letter-spacing: 0rem;
-  color: #434343; }
+br {
+  line-height: 2.52rem; }
 
 p {
   font-family: "Raleway", sans-serif;
   margin: 0; }
+  p.largetitle {
+    font-size: 7.6rem;
+    line-height: 9.12rem;
+    letter-spacing: 0rem;
+    font-weight: 700; }
   p.title {
     font-size: 3.8rem;
     line-height: 4.56rem;
-    letter-spacing: 0rem; }
+    letter-spacing: 0rem;
+    font-weight: 700; }
   p.subtitle {
     font-size: 2rem;
     line-height: 3rem;
@@ -829,6 +828,7 @@ p {
     text-transform: uppercase; }
 
 a {
+  font-family: "Raleway", sans-serif;
   color: #434343;
   cursor: pointer; }
   a:hover {
@@ -855,19 +855,13 @@ a {
     .tile.is-ancestor {
       border: 1px solid #ededed !important;
       margin: 1rem 0;
-      padding: 2rem 0 0 2rem; } }
+      padding: 2rem; } }
 .tile:hover .cta {
   color: #ff5000 !important;
   transition: 0.1s; }
 
 .navitems {
   margin: 0.5rem 0rem; }
-
-.tags span {
-  font-size: 1.4rem !important;
-  line-height: 2.52rem !important;
-  margin-top: 1rem;
-  color: #434343; }
 
 .columns {
   padding: 1rem 2rem; }

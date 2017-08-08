@@ -30,34 +30,30 @@ body
 
 	@media (min-width: $desktop-breakpoint)
 		margin: 4rem
-	
 
 
 
 
-#reveal
-	visibility: hidden
 
-
-		
+br
+	line-height: $font-lh-m
 
 //type settings
-
-h1
-	font-family: $font-family
-	font-size: 10rem
-	line-height: 12rem
-	letter-spacing: $font-ls-m
-	color: $textgrey
 
 
 p
 	font-family: $font-family
 	margin: 0
+	&.largetitle
+		font-size: $font-size-xxl*2
+		line-height: $font-lh-xxl*2
+		letter-spacing: $font-ls-m
+		font-weight: $font-weight-b
 	&.title
 		font-size: $font-size-xxl
 		line-height: $font-lh-xxl
 		letter-spacing: $font-ls-m
+		font-weight: $font-weight-b
 
 	&.subtitle
 		font-size: $font-size-l
@@ -98,12 +94,12 @@ p
 
 
 a
+	font-family: $font-family
 	color: $textgrey
 	cursor: pointer
 	&:hover
 		color: $black
 		transition: $transition-time
-
 	&.cta
 		font-size: $font-size-m
 		line-height: $font-lh-m
@@ -127,7 +123,7 @@ a
 		@media (min-width: $desktop-breakpoint)
 			border: $border-l !important
 			margin: 1rem 0
-			padding: 2rem 0 0 2rem
+			padding: 2rem
 
 	&:hover .cta
 		color: $red !important
@@ -137,12 +133,7 @@ a
 	margin: 0.5rem 0rem
 
 
-.tags
-	span
-		font-size: $font-size-m !important
-		line-height: $font-lh-m !important
-		margin-top: 1rem
-		color: $textgrey
+
 
 .columns
 	padding: 1rem 2rem
