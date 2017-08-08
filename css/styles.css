@@ -845,6 +845,9 @@ a {
       color: #ff5000;
       transition: 0.1s; }
 
+.navitems {
+  background: #fff; }
+
 .tile.is-ancestor {
   border-bottom: 1px solid #ededed !important;
   padding: 2rem 1rem; }
@@ -872,9 +875,9 @@ a {
     .columns {
       margin: 0 !important;
       padding: 1rem 0; } }
-
-.column {
-  padding: 0 1rem 0 0; }
+  .columns.with-border {
+    border: 1px solid #ededed !important;
+    padding: 2rem; }
 
 figure.image {
   margin: 0rem !important; }

@@ -115,8 +115,12 @@ a
 			color: $red
 			transition: $transition-time
 
+//nav
+.navitems
+	background: $white
+
 // grid settings 
-.tile 
+.tile
 	&.is-ancestor
 		border-bottom: $border-l !important
 		padding: 2rem 1rem
@@ -145,8 +149,10 @@ a
 	@media (min-width: $desktop-breakpoint)
 		margin: 0 !important
 		padding: 1rem 0
-.column
-	padding: 0 1rem 0 0
+	&.with-border
+		border: $border-l !important
+		padding: 2rem
+
 
 figure
 	&.image
