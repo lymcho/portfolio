@@ -781,10 +781,13 @@ p {
   font-family: "Raleway", sans-serif;
   margin: 0; }
   p.largetitle {
-    font-size: 7.6rem;
-    line-height: 9.12rem;
-    letter-spacing: 0rem;
+    font-size: 3.8rem;
     font-weight: 700; }
+    @media (min-width: 800px) {
+      p.largetitle {
+        font-size: 7.6rem;
+        line-height: 9.12rem;
+        letter-spacing: 0rem; } }
   p.title {
     font-size: 3.8rem;
     line-height: 4.56rem;

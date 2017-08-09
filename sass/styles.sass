@@ -45,10 +45,14 @@ p
 	font-family: $font-family
 	margin: 0
 	&.largetitle
-		font-size: $font-size-xxl*2
-		line-height: $font-lh-xxl*2
-		letter-spacing: $font-ls-m
+		font-size: $font-size-xxl
 		font-weight: $font-weight-b
+		@media (min-width: $desktop-breakpoint)
+			font-size: $font-size-xxl*2
+			line-height: $font-lh-xxl*2
+			letter-spacing: $font-ls-m
+		
+
 	&.title
 		font-size: $font-size-xxl
 		line-height: $font-lh-xxl
