@@ -792,7 +792,8 @@ p {
     font-size: 3.8rem;
     line-height: 4.56rem;
     letter-spacing: 0rem;
-    font-weight: 700; }
+    font-weight: 700;
+    padding: 0.5rem 0; }
   p.subtitle {
     font-size: 2rem;
     line-height: 3rem;
@@ -823,10 +824,10 @@ p {
     font-size: 10px;
     line-height: 1.44rem;
     letter-spacing: 0.1rem;
+    padding: 0.2rem;
     margin-bottom: 1rem;
     font-weight: 700;
     color: #fff;
-    padding: 0.2rem;
     background: #A3A5A7;
     text-transform: uppercase; }
 
