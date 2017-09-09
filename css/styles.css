@@ -772,7 +772,8 @@ body {
     background: transparent; }
   @media (min-width: 800px) {
     body {
-      margin: 4rem; } }
+      margin: 4rem;
+      padding: 0rem; } }
 
 br {
   line-height: 2.52rem; }
@@ -865,17 +866,14 @@ a {
   transition: 0.1s; }
 
 .navitems {
-  margin: 0.5rem 0rem; }
+  margin: 0rem 0rem; }
 
 .columns {
-  padding: 1rem 2rem; }
+  padding: 1rem 1rem; }
   @media (min-width: 800px) {
     .columns {
       margin: 0 !important;
       padding: 1rem 0; } }
-  .columns.with-border {
-    border: 1px solid #ededed !important;
-    padding: 2rem; }
 
 figure.image {
   margin: 0rem !important; }
