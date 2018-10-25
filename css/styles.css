@@ -3,6 +3,7 @@
     transform: rotate(0deg); }
   to {
     transform: rotate(359deg); } }
+
 .column {
   display: block;
   flex-basis: 0;
@@ -861,6 +862,7 @@ a {
       border: 1px solid #ededed !important;
       margin: 1rem 0;
       padding: 2rem; } }
+
 .tile:hover .cta {
   color: #ff5000 !important;
   transition: 0.1s; }
@@ -877,5 +879,3 @@ a {
 
 figure.image {
   margin: 0rem !important; }
-
-/*# sourceMappingURL=styles.css.map */

@@ -1,41 +1,64 @@
-// var gulp = require('gulp'),
-// 	// uglify = require('gulp-uglify'),
-// 	// sass = require('gulp-ruby-sass'),
-// 	image = require('gulp-imagemin');
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var browserSync = require('browser-sync').create();
+// var imagemin = require('gulp-imagemin');
 
-// //scripts: unglify
-// gulp.task('scripts', function(){
-// 	gulp.src('javascript/*.js')
-// 	.pipe(uglify())
-// 	.pipe(gulp.dest('build/js'));
-// });
+//-------tasks---------------------------------------
+//1.sass to css conversion task
+gulp.task('sass', function(){
+	//the"return here means we want to run this first
+	return gulp.src('sass/*.sass')
+		.pipe(sass())//using gulp-sass
+		.pipe(gulp.dest('css'))
+		.pipe(browserSync.reload({
+			stream: true
+		}))
+});
+// //2.Image task - minimize image
 
-// // styles: sass
-// gulp.task('styles', function () {
-// 	return
-//   		sass('sass/**/*.sass')
-//     	.pipe(gulp.dest('build/css'));
-// });
+// gulp.task('default', () =>
+// 	gulp.src('images/*')
+// 		.pipe(imagemin([
+//     	imagemin.gifsicle({interlaced: true}),
+//     	imagemin.jpegtran({progressive: true}),
+//     	imagemin.optipng({optimizationLevel: 7}),
+//     	imagemin.svgo({plugins: [{removeViewBox: true}]})
+// ]))
+// 		.pipe(gulp.dest('build/img'))
+// );
 
-// Image task
-const gulp = require('gulp');
-const imagemin = require('gulp-imagemin');
+//2.browser sync task
+gulp.task('browserSync', function(){
+	browserSync.init({
+		server: {
+			//default root folder
+			baseDir:'./'
+		},
+	})
+});
 
-gulp.task('default', () =>
-	gulp.src('images/*')
-		.pipe(imagemin([
-    	imagemin.gifsicle({interlaced: true}),
-    	imagemin.jpegtran({progressive: true}),
-    	imagemin.optipng({optimizationLevel: 7}),
-    	imagemin.svgo({plugins: [{removeViewBox: true}]})
-]))
-		.pipe(gulp.dest('build/img'))
-);
 
-//watch: any js changes will run all scripts above
-// gulp.task('watch', function(){
-// 	gulp.watch('javascript/*.js',['scripts']);
-// });
+//-------watch---------------------------------------
+//watch all file conversion tasks - usuallly in app folder
+//making sure ]browser sync & sass] already runs before running watch
+gulp.task('watch', ['browserSync','sass'], function(){
+	//watch for sass conversions
+	gulp.watch('sass/*.sass',['sass']);
+	//other watches
+	//reload the browser whenever index.html files change
+	gulp.watch('*.html').on('change', browserSync.reload);
+	//reload all html files in html folder
+	gulp.watch('html/*.html').on('change', browserSync.reload);
+	//gulp.watch('app/*.js', browserSync.reload);
+	
+});
 
-//the order is the order it compiles
-// gulp.task('default',['image']);
+
+
+
+//-------deployment-------------------------------------
+// gulp.task('default', ['sass', 'image', 'prefix','indexhtmlmin','allhtmlmin','uglify']);
+
+
+
+

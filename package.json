@@ -2,10 +2,15 @@
   "name": "ling zhou design portfolio",
   "version": "2017.0.0",
   "devDependencies": {
-    "gulp": "^3.9.1",
     "gulp-imagemin": "^3.3.0",
     "gulp-ruby-sass": "^2.1.1",
-    "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "npm": "^6.1.0",
+    "psi": "^3.1.0"
   }
 }
