@@ -10,6 +10,31 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- javascript for pw -->
+    <!-- <script type="text/javascript" src="javascript/password.js"></script> -->
+
+    <script>
+function openProject() {
+    var testV = 1;
+    var pass1 = prompt('Please Enter Password',' ');
+    while (testV < 3) {
+    if (!pass1)
+    history.go(-1);
+    if (pass1.toLowerCase() == "letmein") {
+    alert('You Got it Right!');
+    window.location.href="html/g_booking.html"
+    break;
+    }
+    testV+=1;
+    var pass1 =
+    prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+    }
+    if (pass1.toLowerCase()!="password" & testV ==3)
+    history.go(-1);
+    return " ";
+}
+    
+  </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116986130-1"></script>
 <script>
@@ -38,6 +63,40 @@
     
 
     <!-- portoflio pieces -->
+    <!-- groupon illustrations -->
+    <div class="tile is-ancestor">
+      <div class="columns">
+        <div class="column is-4">
+          <p class="title">Groupon Illustration System</p>
+          <p class="subtitle">Crafting delightful and engaging experiences with an inclusive approach</p>
+          <p class="body">Senior Product Designer&nbsp;/&nbsp;2019 - present</p>
+        <br>
+        <a class="cta" onclick="openProject()">View Project</a>
+        </div>
+        <div class="column is-7 is-offset-1">
+          <figure class="image">
+            <img src="images/g_illo_loyalty.gif" alt="groupon"></a>
+          </figure>
+        </div>
+      </div>      
+    </div>
+    <!-- groupon booking -->
+    <div class="tile is-ancestor">
+      <div class="columns">
+        <div class="column is-4">
+          <p class="title">Groupon Booking</p>
+          <p class="subtitle">Repositioning a discount site into a bookable marketplace</p>
+          <p class="body">Senior Product Designer&nbsp;/&nbsp;2019 - present</p>
+        <br>
+        <a class="cta" onclick="openProject()">View Project</a>
+        </div>
+        <div class="column is-7 is-offset-1">
+          <figure class="image">
+            <img src="images/g_booking_main.png" alt="groupon"></a>
+          </figure>
+        </div>
+      </div>      
+    </div>
     <!-- student program-->
     <div class="tile is-ancestor">
       <div class="columns">
@@ -50,7 +109,7 @@
         </div>
         <div class="column is-7 is-offset-1">
           <figure class="image">
-            <a href="html/g_student.html" target="_blank">
+            <a href="html/g_student.html" >
             <img src="images/g_student_main.png" alt="adverator"></a>
           </figure>
         </div>
@@ -351,5 +410,6 @@
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/11.0.2/js/smooth-scroll.js"></script>
   <script type="text/javascript" src="javascript/main.js"></script>
+
 </footer>
 </html>
