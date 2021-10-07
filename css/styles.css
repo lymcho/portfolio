@@ -756,6 +756,7 @@ html {
   font-size: 10px; }
 
 #nav {
+  margin-bottom: 2rem;
   position: fixed;
   z-index: 5;
   left: 1rem;
