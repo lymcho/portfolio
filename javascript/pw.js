@@ -4,7 +4,8 @@ function openProject_illo() {
     var pass1 = prompt('Please Enter Password',' ');
     while (testV < 3) {
     if (!pass1)
-    history.go(-1);
+    window.location.href="index.html"
+    // history.go(-1);
     if (pass1.toLowerCase() == "letmein") {
     window.location.href="html/g_illo.html"
     break;
@@ -14,7 +15,8 @@ function openProject_illo() {
     prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
     }
     if (pass1.toLowerCase()!="password" & testV ==3)
-    history.go(-1);
+    // history.go(-1);
+    window.location.href="index.html"
     return " ";
 }
     
@@ -24,7 +26,7 @@ function openProject_booking() {
     var pass1 = prompt('Please Enter Password',' ');
     while (testV < 3) {
     if (!pass1)
-    history.go(-1);
+    window.location.href="index.html"
     if (pass1.toLowerCase() == "letmein") {
     window.location.href="html/g_booking.html"
     break;
@@ -34,7 +36,7 @@ function openProject_booking() {
     prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
     }
     if (pass1.toLowerCase()!="password" & testV ==3)
-    history.go(-1);
+    window.location.href="index.html"
     return " ";
 }
         
