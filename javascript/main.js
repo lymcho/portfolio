@@ -10,3 +10,6 @@ sr.reveal('.columns', { duration: 100 });
 
 //smoothscroll initializing settings
 smoothScroll.init({speed:600,});
+
+
+//nav is relative until scrolled
