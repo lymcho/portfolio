@@ -757,14 +757,15 @@ html {
 
 #nav {
   margin-bottom: 2rem;
-  position: fixed;
+  position: relative;
   z-index: 5;
   left: 1rem;
   top: 1rem; }
   @media (min-width: 800px) {
     #nav {
-      left: 4rem;
-      top: 4rem; } }
+      left: 0rem;
+      top: 0rem; 
+    margin-bottom: 3rem} }
 
 body {
   overflow: scroll;
