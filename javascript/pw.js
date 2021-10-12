@@ -1,11 +1,11 @@
 //these are for password-protected projects
-function openProject_booking() {
+function openProject_pizza() {
     var testV = 1;
     var pass1 = prompt('Please Enter Password',' ');
     while (testV < 3) {
     if (!pass1)
     window.location.href="index.html"
-    if (pass1.toLowerCase() == "Ling") {
+    if (pass1.toLowerCase() == "letmein") {
     window.location.href="html/g_cs.html"
     break;
     }
@@ -26,7 +26,7 @@ function openProject_illo() {
     if (!pass1)
     window.location.href="index.html"
     // history.go(-1);
-    if (pass1.toLowerCase() == "Ling") {
+    if (pass1.toLowerCase() == "letmein") {
     window.location.href="html/g_illo.html"
     break;
     }
@@ -47,7 +47,7 @@ function openProject_booking() {
     while (testV < 3) {
     if (!pass1)
     window.location.href="index.html"
-    if (pass1.toLowerCase() == "Ling") {
+    if (pass1.toLowerCase() == "letmein") {
     window.location.href="html/g_booking.html"
     break;
     }
