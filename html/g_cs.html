@@ -14,7 +14,7 @@
     <!-- name & title -->
     <a id="home"></a>
     <br>
-    <div id="nav">
+    <div id="nav_back">
       <div class="navitems">
         <a class="cta"  href="../index.html"> &larr;&nbsp;BACK&nbsp;</a>
       </div>
@@ -40,7 +40,7 @@
 <!--     summary -->
   <div  class="columns">
     <div class="column is-6 is-offset-3">
-      <p class="largetitle">Groupon Customer Service Tool</p>
+      <p class="largetitle">Groupon Customer Service App</p>
       
         </div>
         </div>
@@ -49,9 +49,7 @@
        <div class="column is-6 is-offset-3">
        <p class="subtitle"></p>
           <p class="smalllabel">SUMMARY</p>
-          <p class="thirdtitle">A Groupon customer service agent process thousands of customer inquiries, issues & requests every day. Pizza is a chrome app that helps agent speed up live chat/email responses, keep track of multiple threads of conversations, and triage issues correctly and efficiently.
-            I was asked to help incrementally improve the usability of MVP version and envision a more scalable future model. I was engaged in this project for a few months.
-            
+          <p class="thirdtitle">Groupon customer service agents processed thousands of customer inquiries, issues & requests every day. Agents had to switch between 5 or 6 tools and didn't have quick access to frequent features. Pizza, an internal chrome plug-in, solved this problem. Pizza helped agents respond faster, keep track of separate chats, and triage issues. The tool was great but it was bootstrapped together by one engineer. I went onboard along with a small product & engineering team to improve Pizza's usability and scalability.     
 </p>
           <br>
         </div>
@@ -84,10 +82,11 @@
     <div class="column is-6 is-offset-3">
           <p class="title">The Context</p>
           <br>
-          <!-- <p class="smalllabel">THE OPPORTUNITY</p> -->
-          <p class="thirdtitle">Pizza, the customer service tool, has become an essential part of our agents’ day-to-day operation; it allows agents to send pre-programmed snippets such as greetings, anwers to common questions and refund policies. The snippets can be called via macros(shortcut codes) or selected in a step-by-step flow. Agents also frequently look up the customer’s order info and utilizes the decision tree to determine the solution to a problem. Agents often service 2 or 3 customers simultaneously on a timer, as efficency is tied to their performance.
-          </p>
-          
+          <p class="thirdtitle">Pizza, the customer service tool, was an essential part of agents’ day-to-day operations. It helped agents to:</p>
+          <p class="thirdtitle">- navigate and track time for current chats</p>
+          <p class="thirdtitle">- store and send commonly-used text snippets </p>
+          <p class="thirdtitle">- quick access to a customer's profile and order info  </p>
+          <p class="thirdtitle">- use a decision tree to reach a solution </p>
     </div>
   </div>
   <div class="columns">
@@ -98,97 +97,123 @@
     </div>
   </div>
   <div class="column is-6 is-offset-3">
-    <p class="thirdtitle">As I carefully studied the current tool through agent shadowing sessions and previous user reseach findings, I combed through my initial thoughts and mapped out an agent user flow.  This was just for me was to understand the nuts and bolts. For example, which parts are connected and how they are connected, which parts are stand-alone.</p>
+    <p class="thirdtitle">A previous survey suggested most agents enjoyed this tool but encountered usability issues. They also requested more features.</p>
+</div>
+<div class="columns">
+  <div class="column is-6 is-offset-3">
+        <p class="title">Too many features, not enough room?</p>
+  </div>
+</div>
+<div class="columns">
+  <div class="column is-6 is-offset-3">
+        <p class="thirdtitle">Most agents used only one monitor and needed to manage 2 or 3 chats simultaneously. How would we fit all these functionalities in such limited screen real estate?</p>
+        <p class="thirdtitle">It needed decluttering. But the more important task is to envision a framework to make room for future features.</p>
+        <p class="thirdtitle">Take the pizza wheel for example. It allowed new agents to find snippets step-by-step.  But experience agents did not need the pizza wheel at all -  they pulled up snippets by searching macros. Making the pizza wheel panel collapsible would save space for them.  Similarily, making sides of the panels slidable would give agents flexibility to customize.</p>
+  </div>
+</div>
 
- 
+
+<div class="columns">
+  <div class="column is-7 is-offset-1">
+    <figure class="image">
+     <img src="../images/g_pizza_closerlook.png" alt=""></img>
+     </figure>
+   </div>
+  <div class="column is-3">
+   <figure class="image">
+    <img src="../images/g_pizza_panels.gif" alt=""></img>
+    </figure>
+  </div>
+</div>
+<br>
+<div class="column is-6 is-offset-3">
+  <p class="title">Agents cared the most about speed.</p>
+</div>
+<div class="column is-6 is-offset-3">
+  <p class="thirdtitle">It was their most important performance metric. Their speed was a function of how efficient our tool was. We could measure it in two ways: how noticable the actions are and how many clicks it took to get to those actions.</p>
+  <p class="thirdtitle">The MVP version did achieved the goal of minimal clicks by exposing all the actions. But the actions lacked affordances. Inexperienced agents, especially, did not understand what the buttons or icons do.</p>
 </div>
 <div class="columns">
   <div class="column is-10 is-offset-1">
    <figure class="image">
-    <img src="../images/g_pizza_segment.png" alt=""></img>
+    <img src="../images/g_pizza_copytochat.png" alt="">
+  </img>
     </figure>
   </div>
 </div>
 <div class="column is-6 is-offset-3">
-
-  <p class="thirdtitle">There are a lot of potential improvements I could make for Pizza, but it wouldn’t be ideal to completely disrupt the current design agents are used to. It could feel a little overwhelming at first with so many moving parts and so much potential. One way I help everyone organize our thoughts is to segment our problems. The goal was to help the CX team envision a scalable framework to move forward with. The  recommended model was left rail tabs. If new features were added, a new tab can be set up. This way the screen real estate is freed up. Another idea was to allow some customization within each tab.
+  <p class="thirdtitle">In shadow sessions, some agents selected the entire snippet and did a manual copy/paste. They didn't notice or didn't know about the copy to chat action. Because, in this case, the icon was not a good enough metaphor and changing it to a text button worked better. I also added helper text inside of the search bar and preview to highlight functionality.</p>
+</div>
+<div class="column is-6 is-offset-3">
+  <p class="thirdtitle">Another area of improvement was adding explainer tooltips when hovering over icons. </p>
+</div>
+<div class="column is-6 is-offset-3">
+  <p class="title">Devil's in the details.</p>
+</div>
+<div class="column is-6 is-offset-3">
+  <p class="thirdtitle">In the current interface, dropdown from search bar would cover up the bottom two panels. This could be disruptive. Agents needed to cross-reference the decision tree and customer info. </p>
+</div>
+<div class="columns">
+  <div class="column is-10 is-offset-1">
+   <figure class="image">
+    <img src="../images/g_pizza_macro.png" alt=""></img>
+    </figure>
+  </div>
+</div>
+<div class="column is-6 is-offset-3">
+  <p class="thirdtitle">The solution was simple with rearranging the elements. User test data later showed us that many agents noticed and appreciated this change.</p>
+</div>
+<div class="columns">
+  <div class="column is-6 is-offset-3">
+   <figure class="image">
+    <img src="../images/g_pizza_prototype.gif" alt=""></img>
+    </figure>
+  </div>
+</div>
+<div class="column is-6 is-offset-3">
+  <p class="thirdtitle">As part of the user test, I built a coded prototype using javascript to simulate this interaction. </p>
+</div>
+<div class="column is-6 is-offset-3">
+  <p class="title">Lean Design System</p>
+</div>
+<div class="column is-6 is-offset-3">
+  <p class="thirdtitle">Groupon's current design system didn't have font styles that would fit our needs. This app required a set of much more compact UI elements. I put together a lean design system. The system included a small set of styles and components. Engineers used this as front-end code out-of-box and leveraged it for future iterations. 
   </p>
 </div>
-</div>
-  <div class="columns">
-    <div class="column is-10 is-offset-1">
-     <figure class="image">
-      <img src="../images/g_pizza_problems.png" alt=""></img>
-      </figure>
-    </div>
-  </div>
-  <div class="columns">
-  <div class="column is-6 is-offset-3">
-
-    <p class="thirdtitle">To solve the 2 main issues with the current UI, I went in 2 directions. 
-      The first direction is to tokenize the visual styles. To reduce visual clutter, I recommended a very minimal visual system. For example, it only has 1 font size, 2 font weights, 4 greys and 4 status color. From there, mixing and match to create buttons, inputs, container, from bottom to top.     
-    </p>
-  </div>
-</div>
-  <div class="columns">
-    <div class="column is-10 is-offset-1">
-     <figure class="image">
-      <img src="../images/g_pizza_styles.png" alt=""></img>
-      </figure>
-    </div>
-  </div>
-  <div class="collums">
-  <div class="column is-6 is-offset-3">
-    <p class="thirdtitle">
-      The second direction is to establish organization patterns that are logical and efficient.      
-    </p>
-</div>
-</div>
 <div class="columns">
-  <p class="thirdtitle">One of the biggest challenge in this project is to accurately represent the design & functionalities. When designing a tool, there are a lot of nuances. Even though the goal for this phase is only to improve the UI, it’s hard to perceptively separate visual with functionality. 
-    To help the team grasp the full look & feel, I devised a prototype that highlights key interactions. Such as searching for a snippet and send to the chat. 
-    </p>
-</div>
-<div class="columns">
-  <div class="column is-6 is-offset-3">
+  <div class="column is-7 is-offset-2">
    <figure class="image">
-    <img src="../images/g_pizza_text.gif" alt=""></img>
+    <img src="../images/g_pizza_styleguide.gif" alt=""></img>
     </figure>
   </div>
 </div>
+<div class="column is-6 is-offset-3">
+  <p class="title">Validating Our Concepts</p>
+</div>
+<div class="column is-6 is-offset-3">
+  <p class="thirdtitle">Before we commited to building the app, we tested the prototype with a group of agents.
+  </p>
+</div>
 <div class="columns">
-  <div class="column is-6 is-offset-3">
+  <div class="column is-10 is-offset-1">
    <figure class="image">
-    <img src="../images/g_pizza_levels.gif" alt=""></img>
+    <img src="../images/g_pizza_usertests.png" alt=""></img>
     </figure>
   </div>
 </div>
-
-  <div class="columns">
-    <div class="column is-10 is-offset-1">
-     <figure class="image">
-      <img src="../images/g_pizza_now&future.png" alt=""></img>
-      </figure>
-    </div>
-  </div>
-  <div class="columns">
-    <div class="column is-10 is-offset-1">
-     <figure class="image">
-      <img src="../images/g_pizza_styles.png" alt=""></img>
-      </figure>
-    </div>
-  </div>
-  <div class="columns">
-    <div class="column is-10 is-offset-1">
-     <figure class="image">
-      <img src="../images/g_pizza_organization.png" alt=""></img>
-      </figure>
-    </div>
-  </div>
-
-
-  <br>
-
+<div class="column is-6 is-offset-3">
+  <p class="thirdtitle">Here's a demo of the prototype. 
+  </p>
+</div>
+<div class="columns">
+  <div class="column is-10 is-offset-1">
+<video width="100%" height="100%" controls>
+  <source src="../videos/g_pizza_demo.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+</div>
+</div>
  
 <!--   portfolio piece end-->
 

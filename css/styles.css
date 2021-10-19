@@ -755,10 +755,14 @@
 html {
   font-size: 10px; }
 
+#logo{
+  padding: 2rem 0 1rem 0;
+}
+
 #nav {
   margin-bottom: 2rem;
   position: relative;
-  /* z-index: 5; */
+
   left: 1rem;
   top: 1rem; }
   @media (min-width: 800px) {
@@ -767,6 +771,19 @@ html {
       left: 0rem;
       top: 0rem; 
     margin-bottom: 3rem} }
+
+#nav_back{
+  position: relative;
+ 
+  }
+  @media (min-width: 800px) {
+    #nav_back {
+      position: fixed;
+         z-index: 5;
+      margin-left: 2rem;
+      margin-top: 2rem; 
+   } 
+}
 
 body {
   overflow: scroll;
